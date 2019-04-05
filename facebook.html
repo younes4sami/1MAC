@@ -1,0 +1,67 @@
+<html>
+<head>
+     <title>Facebook</title>
+</head>
+<style>
+    #globalcontainer{
+                      border-style: solid;
+                      border-color: purple;
+                      width : 90%;
+                      margin : auto ;
+                    }
+
+    #header        {
+                      border-style: solid;
+                      border-color: red;
+                      height : 50px ;
+                      margin : 5px 5px 5px 5px ;
+                      position: -webkit-sticky; /* Safari */
+                      position: sticky;
+                      top: 15;
+                   }
+    #container     {
+                     display: flex;
+                   }
+
+    #menu          {
+                      border-style: solid;
+                      border-color: green;
+                      min-width : 200px;
+                      height : 400px ;
+                      margin : 5px 5px 5px 5px ;
+                      position: -webkit-sticky; /* Safari */
+                      position: sticky;
+                      top: 80;
+                   }
+    
+    #content       {
+                      border-style: solid;
+                      border-color: blue;
+                      height : 600px ;
+                      flex-grow: 8 ;
+                      margin : 5px 5px 5px 5px ;
+                   }
+
+    #footer       {
+                      border-style: solid;
+                      border-color: red;
+                      height : 50px ;
+                      margin : 5px 5px 5px 5px ;
+                  }
+    p             {
+                    text-align: center ;
+                    font-size: 120%;
+                  }
+
+</style>
+<body>
+    <div id="globalcontainer">
+        <div id="header"><p>Header</p></div>
+        <div id="container">
+        <div id="menu"><p>Menu</p></div>
+        <div id="content"><p>Content</p></div>
+        </div>
+        <div id="footer"><p>Footer</p></div>
+    </div>
+</body>
+</html>
