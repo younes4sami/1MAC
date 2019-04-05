@@ -3,24 +3,27 @@
      <title>Facebook</title>
 </head>
 <style>
-    #globalcontainer{
-                      border-style: solid;
-                      border-color: purple;
-                      width : 90%;
-                      margin : auto ;
+    body            {
+                     margin :  0px ;
+                     padding :  0px;
                     }
-
     #header        {
                       border-style: solid;
                       border-color: red;
                       height : 50px ;
-                      margin : 5px 5px 5px 5px ;
-                      position: -webkit-sticky; /* Safari */
-                      position: sticky;
-                      top: 15;
+                      position: fixed;
+                      top : 0 ;
+                      width : 100%;
                    }
     #container     {
+                     border-style: solid;
+                     border-color: purple;
                      display: flex;
+                     width : 90%;
+                     min-width : 800px;
+                     margin : auto ;
+                     margin-top : 60px ;
+                     margin-bottom : 5px;
                    }
 
     #menu          {
@@ -31,14 +34,27 @@
                       margin : 5px 5px 5px 5px ;
                       position: -webkit-sticky; /* Safari */
                       position: sticky;
-                      top: 80;
+                      top: 70;
                    }
     
     #content       {
                       border-style: solid;
                       border-color: blue;
-                      height : 600px ;
+                      height : 1200px ;
+                      min-width : 300px;
                       flex-grow: 8 ;
+                      margin : 5px 5px 5px 5px ;
+                   }
+    #items        {
+                      min-width : 250px;
+                      height : 500px ;
+                      margin : 5px 5px 5px 5px ;
+                   }
+    #item        {
+                      border-style: solid;
+                      border-color: orange;
+                      width : 230px;
+                      height : 150px ;
                       margin : 5px 5px 5px 5px ;
                    }
 
@@ -46,20 +62,33 @@
                       border-style: solid;
                       border-color: red;
                       height : 50px ;
-                      margin : 5px 5px 5px 5px ;
+                      width : 100%;
                   }
     p             {
                     text-align: center ;
                     font-size: 120%;
                   }
 
+@media only screen and (min-width: 800px) {
+    .fix-p        {
+                      position: -webkit-sticky; /* Safari */
+                      position: sticky;
+                      top: 70;
+                  }
+                }
+
 </style>
 <body>
-    <div id="globalcontainer">
+    <div>
         <div id="header"><p>Header</p></div>
         <div id="container">
         <div id="menu"><p>Menu</p></div>
         <div id="content"><p>Content</p></div>
+        <div id="items" class="fix-p">
+          <div id="item"><p>Item #1</p></div>
+          <div id="item"><p>Item #2</p></div>
+          <div id="item"><p>Item #3</p></div>
+        </div>
         </div>
         <div id="footer"><p>Footer</p></div>
     </div>
