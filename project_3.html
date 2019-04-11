@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project 3</title>
+
+<style>
+    #global-container{
+           width : 90% ;
+           margin : auto ;
+           }
+    h1      {
+             text-align: center ;
+             color : DodgerBlue;
+           }
+    
+@media only screen and (min-width: 768px) {
+    .header-pc{
+            border: 5px solid DodgerBlue; 
+           }
+            .sections-pc{
+                       display: flex;
+                       width : 100% ;
+                    }                     
+        .section1-pc{
+            border: 5px solid DodgerBlue;
+            margin-top : 10px;
+            margin-right : 10px;
+            height : 500px;
+            width : 100% ;
+                    }
+        .section2-pc{
+            border: 5px solid DodgerBlue;
+            margin-top : 10px;
+            margin-left : 10px;
+            height : 500px;
+            width : 100% ;
+                    }
+    }
+@media only screen and (max-width: 767px) {
+    .header-m{
+            border: 5px solid DodgerBlue; 
+            width: 100%;
+           }
+        .sections-m{
+                  width : 100% ;
+                }                     
+    .section-m{
+        border: 5px solid DodgerBlue;
+        margin-top : 10px;
+        height : 300px;
+        width : 100% ;
+                }
+}
+
+</style>
+</head>
+<body>
+
+    <div id="global-container" class="">
+
+            <div id="" class="header-pc header-m"><h1>Header</h1></div>
+
+            <div id="" class="sections-pc sections-m">
+                    <div id="" class="section1-pc section-m"><h1>Section 1</h1></div>
+                    <div id="" class="section2-pc section-m"><h1>Section 2</h1></div>
+            </div>
+    </div>
+
+</body>
+</html>
